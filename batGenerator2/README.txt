@@ -2,22 +2,29 @@
 Hotline Miami NG (New Game) Bat Generator
 =========================================
 
-**************************************************************************************************
-If your browser tells you to not download the file allow it, it's because i'm creating a bat file
-**************************************************************************************************
+Source Code: https://github.com/buffet-time/hotlineMiamiBatGenerators
 
-The directory you need to input is the of the folder to your SaveData.sav for Hotline Miami
-You need to have the directory to the SaveData folder but not to the SaveData.sav itself
-
-**********************************************************************************************************************
-The first textfield is for the folder which holds your Hotline Miami savedata 
-The second textfield is for the folder which holds the savedata you want to have copied in (muted or set audio level)
-**********************************************************************************************************************
- -- Make sure both are formatted like the below example
+****************************************************************************
+The first textfield:   Is to the folder which HotlineMiami actually stores
+					   / reads the SaveData from. More info here:
+					   http://hotlinemiami.wikia.com/wiki/Save_File
+					   
+The second textfield:  Is to the folder which holds the SaveData.sav that 
+					   you want to copy in that has preset audio levels
+****************************************************************************
+MAKE SURE YOUR TEXTFIELDS INPUT ARE FORMATTED LIKE THE BELOW EXAMPLES
 
 Example of a proper directory for this program is below:
-C:\Users\Daniel\Documents\My Games\HotlineMiami\
+First Line:    C:\Users\Daniel\Documents\My Games\HotlineMiami\							
+Second Line:   C:\Users\Daniel\Documents\My Games\HotlineMiami\hm_saves\metro\audio\ 
+(this second line should be a folder preferably located inside of the \HotlineMiami\ folder)
+
+Note that you are just directing it to the folder not adding the SaveData.sav
+
 
 
 - Buffet Time
-Tweet at me @radx86 if you have any issues.
+CONTACT INFO IF YOU HAVE ISSUES/ QUESTIONS
+Twitter: @buffit_tim
+Discord: Buffet Time#5224
+G-Mail : radd86@gmail.com
