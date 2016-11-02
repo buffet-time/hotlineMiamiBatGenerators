@@ -1,18 +1,20 @@
 package main;
 
 //Imports
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
-import java.awt.event.*;
+        import javax.swing.*;
+        import java.awt.*;
+        import java.io.*;
+        import java.awt.event.*;
 
 // guiPanel Class
-public class guiPanel extends JPanel implements ActionListener {
+class guiPanel extends JPanel implements ActionListener
+{
     private JTextField pathTyped, copyPathTyped;
-    public JLabel statusLabel;
+    private JLabel statusLabel;
 
     //Constructor
-    public guiPanel() {
+    guiPanel()
+    {
         /// Declaring what each of the labels/ buttons/ text entry are
 
         JLabel pathInputLabel = new JLabel("Read the README to know what to put in each input field.");
@@ -36,13 +38,15 @@ public class guiPanel extends JPanel implements ActionListener {
         setBackground(Color.white);
     }
 
-
     /// adding action listener to the button
-    private class pathListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
+    private class pathListener implements ActionListener
+    {
+        public void actionPerformed(ActionEvent event)
+        {
             String pathTypedInput;
             String copyPathTypedInput;
-            do {
+            do
+            {
                 /// for pathTyped
                 String filler = pathTyped.getText();
                 pathTyped.setText(filler);
@@ -58,35 +62,37 @@ public class guiPanel extends JPanel implements ActionListener {
         }
     }
 
-
-    public class batCreation extends pathListener {
+    private class batCreation extends pathListener
+    {
         PrintWriter writer;
-        String placeHolder = "this will be the directory input";
-        String placeHolder2 = "this will be the directory input for the copying";
+        String pathOne = "this will be the directory input";
+        String pathTwo = "this will be the directory input for the copying";
 
 
         /// Constructor
-        public batCreation() {
-            placeHolder = pathTyped.getText();
-            placeHolder2 = copyPathTyped.getText();
+        batCreation() {
+            pathOne = pathTyped.getText();
+            pathTwo = copyPathTyped.getText();
 
-            try {
+            try
+            {
                 writer = new PrintWriter("HM1 NG Bat.bat", "UTF-8");
                 writer.println("@ECHO OFF");
-                writer.println("TITLE Buffet Time's HM1 NG Bat File (Auto-Generated)");
-                writer.println("del '" + placeHolder + "SaveData.sav'");
-                writer.println("copy '" + placeHolder2 + "SaveData.sav' '" + placeHolder + "SaveData.sav'");
+                writer.println("TITLE Buffet Time's HM NG Bat File (Auto-Generated)");
+                writer.println("del '" + pathOne + "SaveData.sav'");
+                writer.println("copy '" + pathTwo + "SaveData.sav' '" + pathOne + "'");
                 writer.close();
                 System.out.println("Done writing to file.");
-                }
+            }
+
             catch (FileNotFoundException | UnsupportedEncodingException e) {e.printStackTrace();}
         }
     }
 
-
     /// sets the button to execute the batCreation
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+    {
         new batCreation();
         statusLabel.setText("Bat File was successfully created");
     }
