@@ -14,4 +14,7 @@ C:\Users\Daniel\Documents\My Games\HotlineMiami\
 
 
 - Buffet Time
-Tweet at me @radx86 if you have any issues.
+CONTACT INFO IF YOU HAVE ISSUES/ QUESTIONS
+Twitter: @buffit_tim
+Discord: Buffet Time#5224
+G-Mail : radd86@gmail.com
