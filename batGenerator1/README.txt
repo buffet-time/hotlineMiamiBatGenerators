@@ -2,10 +2,6 @@
 Hotline Miami NG (New Game) Bat Generator
 =========================================
 
-**************************************************************************************************
-If your browser tells you to not download the file allow it, it's because i'm creating a bat file
-**************************************************************************************************
-
 The directory you need to input is of the folder to your SaveData.sav for Hotline Miami
 You need to have the directory to the SaveData folder but not to the SaveData.sav itself
 
