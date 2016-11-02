@@ -2,14 +2,9 @@ package main;
 
 import javax.swing.*;
 
-///
-/// Created by Buffet Time
-/// Started on April 27th, 2016
-///
-
-
 public class driver
 {
+    // just creating the gui all programming is contained in guiPanel.java
     public static void main(String[] args)
     {
         JFrame frame = new JFrame("NG Any% Batch Generator");
